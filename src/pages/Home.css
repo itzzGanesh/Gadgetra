@@ -1,0 +1,93 @@
+.home-section {
+  padding: 80px 0;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-slate {
+  background-color: #f8fafc;
+}
+
+.home-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 36px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.section-view-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #2563eb;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: gap 0.2s ease;
+}
+
+.section-view-all:hover {
+  gap: 10px;
+}
+
+.products-grid-layout {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 1200px) {
+  .products-grid-layout {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .products-grid-layout {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 580px) {
+  .products-grid-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Brands Showcase */
+.brands-showcase-section {
+  padding: 70px 0;
+  background: #0f172a;
+  color: #ffffff;
+}
+
+.brands-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.brand-chip-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #cbd5e1;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+}
+
+.brand-chip-card:hover {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4);
+}

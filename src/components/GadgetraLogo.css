@@ -1,0 +1,63 @@
+.gadgetra-logo-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  user-select: none;
+}
+
+.g-symbol-badge {
+  position: relative;
+  background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 50%, #06b6d4 100%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+  overflow: hidden;
+  letter-spacing: -1px;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.g-letter {
+  background: linear-gradient(180deg, #ffffff 0%, #e0f2fe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+  transform: scale(1.05);
+}
+
+.g-spark {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 8px;
+  height: 8px;
+  background: #38bdf8;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #38bdf8;
+}
+
+.gadgetra-brand-text {
+  font-size: 1.45rem;
+  font-weight: 900;
+  color: #0f172a;
+  letter-spacing: -0.5px;
+  line-height: 1;
+}
+
+.brand-highlight {
+  color: #2563eb;
+}
+
+/* Dark background override — used in footer */
+.footer-logo-link .gadgetra-brand-text {
+  color: #f1f5f9;
+}
+
+.footer-logo-link .brand-highlight {
+  color: #38bdf8;
+}
+
